@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adestramento Fácil de Cães - Método Comprovado</title>
+    <meta name="description" content="Transforme o comportamento do seu cão em semanas com nosso método de adestramento canino. Técnicas simples e eficazes para qualquer raça ou idade.">
+    <style>
+        /* RESET E CONFIGURAÇÕES GERAIS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            background-color: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* ESTILOS DE TEXTO */
+        h1, h2, h3, h4 {
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: white; /* Alterado para branco */
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        
+        h3 {
+            font-size: 1.7rem;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        strong {
+            color: #1e40af;
+        }
+        
+        /* BOTÕES */
+        .btn {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: white;
+            padding: 18px 36px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn:hover {
+            background-color: #2563eb;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn:active {
+            transform: translateY(1px);
+        }
+        
+        .btn-large {
+            padding: 20px 40px;
+            font-size: 1.3rem;
+        }
+        
+        .btn-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(59, 130, 246, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+            }
+        }
+        
+        /* HEADER HERO */
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white; /* Alterado para branco */
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+            opacity: 0.5;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.4rem;
+            opacity: 0.9;
+            margin-bottom: 2.5rem;
+            line-height: 1.5;
+            color: white; /* Alterado para branco */
+        }
+        
+        .hero-image-container {
+            position: relative;
+            max-width: 350px;
+            margin: 2.5rem auto;
+            border-radius: 15px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            border: 8px solid white;
+            transform: rotate(-5deg);
+            transition: transform 0.5s ease;
+        }
+        
+        .hero-image-container:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+        
+        .hero-badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background-color: #f59e0b;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-15px);}
+            60% {transform: translateY(-7px);}
+        }
+        
+        .author-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        .author-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            margin-right: 15px;
+        }
+        
+        .author-text {
+            text-align: left;
+        }
+        
+        .author-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: white; /* Alterado para branco */
+        }
+        
+        .author-title {
+            opacity: 0.8;
+            font-size: 0.9rem;
+            color: white; /* Alterado para branco */
+        }
+        
+        /* SEÇÕES */
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3.5rem;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 5px;
+            background-color: #3b82f6;
+            margin: 1.5rem auto 0;
+            border-radius: 5px;
+        }
+        
+        .section-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            font-size: 1.2rem;
+            color: #475569;
+        }
+        
+        /* PROBLEMAS */
+        .problems-section {
+            background-color: #f1f5f9;
+        }
+        
+        .problems-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 3rem;
+        }
+        
+        .problem-card {
+            flex: 1 1 350px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: all 0.3s ease;
+            border-top: 5px solid #3b82f6;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .problem-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .problem-icon {
+            font-size: 3rem;
+            color: #3b82f6;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* BENEFÍCIOS */
+        .benefits-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 3rem;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border-left: 5px solid #3b82f6;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .benefit-number {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 5rem;
+            font-weight: bold;
+            color: rgba(59, 130, 246, 0.1);
+            line-height: 1;
+        }
+        
+        .benefit-title {
+            font-size: 1.4rem;
+            color: #1e40af;
+            margin-bottom: 1rem;
+            padding-right: 40px;
+        }
+        
+        /* CAPÍTULOS */
+        .chapters-section {
+            background-color: #f1f5f9;
+        }
+        
+        .chapters-accordion {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .chapter-item {
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        
+        .chapter-header {
+            padding: 20px;
+            background-color: #3b82f6;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .chapter-content {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .chapter-content-inner {
+            padding: 20px;
+        }
+        
+        .chapter-item.active .chapter-content {
+            max-height: 500px;
+            padding: 0 20px 20px;
+        }
+        
+        .chapter-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .chapter-item.active .chapter-icon {
+            transform: rotate(180deg);
+        }
+        
+        /* DEPOIMENTOS */
+        .testimonials-section {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+        }
+        
+        .testimonials-section .section-title {
+            color: white;
+        }
+        
+        .testimonials-section .section-title:after {
+            background-color: white;
+        }
+        
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .testimonial-slide {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px;
+            text-align: center;
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .testimonial-slide.active {
+            display: block;
+        }
+        
+        .testimonial-text {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+            position: relative;
+            color: white; /* Alterado para branco */
+        }
+        
+        .testimonial-text:before,
+        .testimonial-text:after {
+            content: '"';
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.3);
+            position: absolute;
+        }
+        
+        .testimonial-text:before {
+            top: -20px;
+            left: -15px;
+        }
+        
+        .testimonial-text:after {
+            bottom: -40px;
+            right: -15px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .testimonial-author-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 3px solid white;
+        }
+        
+        .testimonial-author-name {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: white; /* Alterado para branco */
+        }
+        
+        .testimonial-author-dog {
+            opacity: 0.9;
+            color: white; /* Alterado para branco */
+        }
+        
+        .testimonial-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .testimonial-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.3);
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-dot.active {
+            background-color: white;
+            transform: scale(1.3);
+        }
+        
+        /* OFERTA */
+        .offer-section {
+            text-align: center;
+            background-color: #f8fafc;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .offer-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ef4444;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transform: rotate(15deg);
+            animation: pulse 1.5s infinite;
+        }
+        
+        .price-box {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #334155;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+            position: relative;
+        }
+        
+        .price-box:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: linear-gradient(90deg, #3b82f6, #10b981, #f59e0b, #ef4444);
+        }
+        
+        .price {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #3b82f6;
+            margin: 20px 0;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .price-old {
+            font-size: 1.8rem;
+            color: #94a3b8;
+            text-decoration: line-through;
+            margin-right: 15px;
+            position: relative;
+            top: -10px;
+        }
+        
+        .bonus-list {
+            text-align: left;
+            margin: 40px 0;
+        }
+        
+        .bonus-item {
+            margin-bottom: 15px;
+            padding-left: 35px;
+            position: relative;
+            font-size: 1.1rem;
+        }
+        
+        .bonus-item:before {
+            content: "✓";
+            color: #10b981;
+            font-weight: bold;
+            font-size: 1.3rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+        
+        .guarantee {
+            background-color: #f8fafc;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border: 1px dashed #cbd5e1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .guarantee-icon {
+            font-size: 2.5rem;
+            color: #10b981;
+            margin-right: 20px;
+        }
+        
+        .guarantee-text {
+            text-align: left;
+            max-width: 400px;
+        }
+        
+        .guarantee-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        /* PERGUNTAS FREQUENTES */
+        .faq-section {
+            background-color: #f1f5f9;
+        }
+        
+        .faq-grid {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: #3b82f6;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            margin-top: 15px;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        
+        /* RODAPÉ */
+        footer {
+            background-color: #1e293b;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        .footer-column {
+            flex: 1 1 300px;
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+        
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #3b82f6;
+        }
+        
+        .footer-links {
+            list-style-type: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #e2e8f0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #3b82f6;
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #334155;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background-color: #3b82f6;
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            section {
+                padding: 3rem 0;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .price {
+                font-size: 2.5rem;
+            }
+            
+            .price-old {
+                font-size: 1.5rem;
+            }
+            
+            .btn-large {
+                padding: 15px 30px;
+                font-size: 1.1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .hero-image-container {
+                max-width: 280px;
+            }
+            
+            .price-box {
+                padding: 25px;
+            }
+            
+            .bonus-item {
+                font-size: 1rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- CABEÇALHO HERO -->
+    <header>
+        <div class="header-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Adestramento Fácil de Cães: <span style="color: #fbbf24;">O Método Definitivo</span> para Educar Seu Melhor Amigo</h1>
+                <p class="hero-subtitle">Descubra técnicas comprovadas para transformar o comportamento do seu cão em semanas, sem gastar fortunas com adestradores ou equipamentos caros.</p>
+                <a href="#oferta" class="btn btn-large btn-pulse">QUERO ADESTRAR MEU CÃO AGORA!</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- PROBLEMAS -->
+    <section class="problems-section">
+        <div class="container">
+            <h2 class="section-title">Seu Cão Tem Algum Desses Problemas?</h2>
+            <p class="section-intro">Identificamos os 6 principais desafios que os donos de cães enfrentam diariamente. Qual deles está roubando sua paz?</p>
+            
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Latidos Excessivos</h3>
+                    <p>Seu cão late sem parar a cada barulho, visita ou quando fica sozinho, perturbando você e os vizinhos.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Xixi Fora do Lugar</h3>
+                    <p>Você já perdeu a conta de quantos tapetes, sofás ou sapatos foram "marcados" pelo seu cão.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-shoe-prints"></i>
+                    </div>
+                    <h3>Destruição de Objetos</h3>
+                    <p>Saiu de casa por 5 minutos e voltou para encontrar seus móveis, sapatos ou almofadas destruídos.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <h3>Puxões na Coleira</h3>
+                    <p>Passear com seu cão parece uma competição de cabo de guerra, onde você sempre sai perdendo.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Comportamento com Visitantes</h3>
+                    <p>Seu cão pula, late ou até rosna para convidados, tornando cada visita um momento constrangedor.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h3>Desobediência Geral</h3>
+                    <p>Você dá comandos, mas seu cão age como se não ouvisse, ignorando completamente suas ordens.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 4rem;">
+                <h3>Se você identificou pelo menos UM desses problemas...</h3>
+                <p style="font-size: 1.3rem; margin: 1.5rem 0;">O método do Ebook <strong>Adestramento Fácil de Cães</strong> foi desenvolvido exatamente para resolver essas situações!</p>
+                <a href="#oferta" class="btn btn-large">QUERO RESOLVER ESSES PROBLEMAS!</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- BENEFÍCIOS -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">O Que Você Vai Aprender no Ebook</h2>
+            <p class="section-intro">Conheça os 6 pilares do método de adestramento que vai transformar a relação com seu cão:</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">1</div>
+                    <h3 class="benefit-title">Psicologia Canina</h3>
+                    <p>Entenda como seu cão pensa e age, descobrindo os segredos da mente canina para se comunicar de forma eficaz.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-number">2</div>
+                    <h3 class="benefit-title">Métodos Básicos</h3>
+                    <p>Técnicas simples para ensinar comandos essenciais como "senta", "fica", "deita" e "vem".</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-number">3</div>
+                    <h3 class="benefit-title">Adestramento Avançado</h3>
+                    <p>Domine métodos como clicker training, reforço positivo e dog whispering para resultados profissionais.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-number">4</div>
+                    <h3 class="benefit-title">Saúde e Nutrição</h3>
+                    <p>Descubra como a alimentação correta pode influenciar diretamente no comportamento do seu cão.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-number">5</div>
+                    <h3 class="benefit-title">Condicionamento de Filhotes</h3>
+                    <p>Técnicas especiais para educar filhotes desde os primeiros dias, prevenindo problemas futuros.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-number">6</div>
+                    <h3 class="benefit-title">Solução de Problemas</h3>
+                    <p>Métodos específicos para corrigir os comportamentos indesejados mais comuns em cães.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CAPÍTULOS -->
+    <section class="chapters-section">
+        <div class="container">
+            <h2 class="section-title">Conteúdo Exclusivo do Ebook</h2>
+            <p class="section-intro">Veja o que você vai encontrar em cada capítulo deste guia completo:</p>
+            
+            <div class="chapters-accordion">
+                <div class="chapter-item">
+                    <div class="chapter-header">
+                        <span>Capítulo 1: Benefícios do Treinamento</span>
+                        <i class="fas fa-chevron-down chapter-icon"></i>
+                    </div>
+                    <div class="chapter-content">
+                        <div class="chapter-content-inner">
+                            <p>Descubra como o treinamento pode fortalecer seu relacionamento com seu cão, melhorar seu comportamento, estimular sua inteligência e trazer harmonia para seu lar.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chapter-item">
+                    <div class="chapter-header">
+                        <span>Capítulo 2: Psicologia do Cão</span>
+                        <i class="fas fa-chevron-down chapter-icon"></i>
+                    </div>
+                    <div class="chapter-content">
+                        <div class="chapter-content-inner">
+                            <p>Entenda a mente canina: instintos de lobo, hierarquia na matilha, memória canina e como estabelecer seu papel de líder de forma natural e respeitosa.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chapter-item">
+                    <div class="chapter-header">
+                        <span>Capítulo 3: Métodos Básicos</span>
+                        <i class="fas fa-chevron-down chapter-icon"></i>
+                    </div>
+                    <div class="chapter-content">
+                        <div class="chapter-content-inner">
+                            <p>Técnicas fundamentais para gestão de comportamento, exercícios físicos e mentais, e como fazer seu cão entender a estrutura familiar.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chapter-item">
+                    <div class="chapter-header">
+                        <span>Capítulo 4: Treinamento Avançado</span>
+                        <i class="fas fa-chevron-down chapter-icon"></i>
+                    </div>
+                    <div class="chapter-content">
+                        <div class="chapter-content-inner">
+                            <p>Domine métodos profissionais como reforço positivo, treinamento com clicker, dog whispering e técnicas com coleira.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chapter-item">
+                    <div class="chapter-header">
+                        <span>Capítulo 5: Saúde e Nutrição</span>
+                        <i class="fas fa-chevron-down chapter-icon"></i>
+                    </div>
+                    <div class="chapter-content">
+                        <div class="chapter-content-inner">
+                            <p>Guia completo sobre necessidades nutricionais, proteínas, gorduras, minerais e como manter o peso ideal do seu cão.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chapter-item">
+                    <div class="chapter-header">
+                        <span>Capítulo 6: Condicionamento do Filhote</span>
+                        <i class="fas fa-chevron-down chapter-icon"></i>
+                    </div>
+                    <div class="chapter-content">
+                        <div class="chapter-content-inner">
+                            <p>Técnicas especiais para adaptar seu filhote ao ambiente doméstico, incluindo limpeza, visitas e passeios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#oferta" class="btn btn-large">QUERO ACESSAR TODO ESTE CONTEÚDO!</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- DEPOIMENTOS -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Resultados Reais de Donos de Cães</h2>
+            <p class="section-intro" style="color: white;">Veja o que pessoas como você estão dizendo sobre o método:</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-text">
+                        Meu cachorro Max era impossível de controlar - latia sem parar, destruía tudo e puxava tanto na coleira que eu tinha medo de sair com ele. Depois de aplicar as técnicas do ebook, em 3 semanas ele já atendia a comandos básicos e nossos passeios se tornaram momentos prazerosos. Valeu cada centavo!
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Depoimento Carla" class="testimonial-author-img">
+                        <div>
+                            <div class="testimonial-author-name">Carla Mendes</div>
+                            <div class="testimonial-author-dog">Dona do Max, Labrador</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-text">
+                        Adotei uma cadela adulta com muitos traumas e problemas de comportamento. Já tinha gasto uma fortuna com adestradores sem resultados. O ebook me deu as ferramentas para entender a Luna e criar uma conexão real. Hoje ela é uma cadela tranquila e obediente. Recomendo para quem tem cães difíceis!
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Depoimento Rafael" class="testimonial-author-img">
+                        <div>
+                            <div class="testimonial-author-name">Rafael Costa</div>
+                            <div class="testimonial-author-dog">Dono da Luna, SRD</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-text">
+                        Comprei o ebook quando peguei meu filhote e segui todas as orientações desde o primeiro dia. O Thor nunca destruiu nada em casa, aprendeu a fazer xixi no lugar certo em uma semana e é o cão mais obediente do prédio! Meus vizinhos não acreditam que eu mesma adestrei ele seguindo um livro.
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Depoimento Juliana" class="testimonial-author-img">
+                        <div>
+                            <div class="testimonial-author-name">Juliana Almeida</div>
+                            <div class="testimonial-author-dog">Dona do Thor, Golden Retriever</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-nav">
+                    <div class="testimonial-dot active" data-slide="0"></div>
+                    <div class="testimonial-dot" data-slide="1"></div>
+                    <div class="testimonial-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- OFERTA -->
+    <section id="oferta" class="offer-section">
+        <div class="container">
+            <h2 class="section-title">Garanta Seu Ebook Hoje Com Condições Especiais</h2>
+            <p class="section-intro">Invista na educação do seu melhor amigo e transforme sua vida em comum</p>
+            
+            <div class="price-box">
+                <div class="offer-badge">OFERTA ESPECIAL</div>
+                
+                <h3>Adestramento Fácil de Cães - Edição Completa</h3>
+                
+                <div style="margin: 2rem 0;">
+                    <span class="price">R$ 10,00</span>
+                </div>
+                
+                <p style="color: #ef4444; font-weight: bold;">Preço promocional por tempo limitado!</p>
+                
+                <div class="bonus-list">
+                    <h4>O que você vai receber hoje:</h4>
+                    <div class="bonus-item">Ebook completo "Adestramento Fácil de Cães" (PDF)</div>
+                    <div class="bonus-item">6 capítulos com técnicas passo a passo</div>
+                    <div class="bonus-item">Métodos para todas as idades e raças</div>
+                    <div class="bonus-item">Acesso imediato e vitalício</div>
+                </div>
+                
+                <a href="https://pay.cakto.com.br/iynmoy8_400279" class="btn btn-large btn-pulse" style="width: 100%;">QUERO MEU EBOOK AGORA!</a>
+                
+                <div class="guarantee">
+                    <i class="fas fa-shield-alt guarantee-icon"></i>
+                    <div class="guarantee-text">
+                        <div class="guarantee-title">Garantia Incondicional de 7 Dias</div>
+                        <p>Se por qualquer motivo você não ficar satisfeito com o ebook, devolvemos 100% do seu dinheiro sem perguntas. Você não tem nada a perder!</p>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 2rem; font-size: 0.9rem; color: #64748b;">
+                    <i class="fas fa-lock"></i> Pagamento seguro via cartão de crédito, Pix ou boleto bancário
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PERGUNTAS FREQUENTES -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Dúvidas Frequentes</h2>
+            <p class="section-intro">Tire suas principais dúvidas sobre o ebook e o método</p>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>O ebook serve para qualquer raça de cão?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! O método foi desenvolvido para funcionar com todas as raças e até com cães sem raça definida (SRD). As técnicas são baseadas na psicologia canina universal, que é comum a todos os cães, independentemente de tamanho ou raça.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>E se meu cão for muito velho ou muito teimoso?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O ebook inclui capítulos específicos para cães adultos e idosos, com técnicas adaptadas para cada fase da vida. Para cães teimosos, o Capítulo 4 sobre Treinamento Avançado traz métodos especiais que funcionam mesmo com os casos mais difíceis.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quanto tempo leva para ver resultados?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Isso varia conforme o problema e a consistência na aplicação das técnicas. Muitos donos relatam melhoras nos primeiros 3-5 dias para problemas simples. Comportamentos mais complexos podem levar algumas semanas de treino consistente.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Preciso comprar equipamentos caros?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não! O método foi desenvolvido para ser aplicado com itens que você já tem em casa ou que são muito acessíveis, como coleiras comuns e petiscos. O Capítulo 3 ensina como adaptar objetos do dia a dia para o treinamento.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Como recebo o ebook após a compra?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O acesso é imediato! Após a confirmação do pagamento, você recebe um link para download do ebook em PDF, que pode ser lido em qualquer dispositivo: celular, tablet ou computador. Você também recebe por e-mail para acessar quando quiser.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>E se eu não gostar do ebook?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oferecemos uma garantia incondicional de 7 dias. Se por qualquer motivo você não ficar satisfeito, basta nos enviar um e-mail e devolvemos 100% do seu dinheiro, sem perguntas ou burocracia.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 4rem;">
+                <h3 style="margin-bottom: 1.5rem;">Pronto para Transformar o Comportamento do Seu Cão?</h3>
+                <a href="https://pay.cakto.com.br/iynmoy8_400279" class="btn btn-large btn-pulse">SIM, QUERO O EBOOK AGORA!</a>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">Garantia de 7 dias | Acesso Imediato | Suporte 24h</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© Adestramento Fácil de Cães. Todos os direitos reservados.</p>
+                <p>contato@adestramentofacil.com.br</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Accordion para capítulos
+        const chapterItems = document.querySelectorAll('.chapter-item');
+        chapterItems.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Accordion para FAQ
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Slider de depoimentos
+        const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+        const testimonialDots = document.querySelectorAll('.testimonial-dot');
+        let currentSlide = 0;
+        
+        function showSlide(n) {
+            testimonialSlides.forEach(slide => slide.classList.remove('active'));
+            testimonialDots.forEach(dot => dot.classList.remove('active'));
+            
+            currentSlide = (n + testimonialSlides.length) % testimonialSlides.length;
+            testimonialSlides[currentSlide].classList.add('active');
+            testimonialDots[currentSlide].classList.add('active');
+        }
+        
+        testimonialDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showSlide(index);
+            });
+        });
+        
+        // Auto-rotacionar depoimentos
+        setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 5000);
+        
+        // Smooth scroll para links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
